@@ -14,6 +14,8 @@ import LiveHackTracker from "./pages/LiveHackTracker";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import NotFound from "./pages/NotFound";
+import { Buffer } from 'buffer';
+if (!window.Buffer) window.Buffer = Buffer;
 
 const queryClient = new QueryClient();
 

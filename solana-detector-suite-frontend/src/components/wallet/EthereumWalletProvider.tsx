@@ -13,7 +13,7 @@ const { chains, publicClient } = configureChains(
 
 const { wallets } = getDefaultWallets({
   appName: 'Superteam Security Dashboard',
-  projectId: 'YOUR_PROJECT_ID', // Replace with your actual WalletConnect project ID in production
+  projectId: '2e17fa805b910fd218556c50df761af5', // Replace with your actual WalletConnect project ID in production
   chains,
 });
 
