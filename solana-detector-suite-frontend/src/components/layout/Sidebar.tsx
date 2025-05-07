@@ -13,14 +13,11 @@ const NavItem = ({ icon: Icon, text, to }: NavItemProps) => {
   let isActive = false;
   
   try {
-    // Use try-catch to safely handle the case where the component is rendered outside of a Router context
     const location = useLocation();
     isActive = location.pathname === to;
   } catch (error) {
     console.error("NavItem component used outside of a Router context");
-    // Default to inactive when not in a router context
   }
-  
   return (
     <Link
       to={to}
@@ -83,7 +80,7 @@ export default function Sidebar() {
       
       <div className="p-4 border-t border-border mt-auto">
         <a 
-          href="https://github.com/superteam-security/dashboard" 
+          href="https://github.com/itsabhay83/solana-detector-suite"
           target="_blank" 
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-sm text-gray-400 hover:text-white"
